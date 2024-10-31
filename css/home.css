@@ -1,0 +1,30 @@
+article {
+  width: 1200px;
+  margin: 0 auto;
+  padding-top: var(--headerHeight);
+}
+.hero {
+  width: 100%;
+  position: relative;
+}
+video {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.hero .hero-content {
+  width: 500px;
+  height: 500px;
+  background-color: rgba(218, 218, 218, 0.7);
+}
+.welcome {
+  color: var(--ivory);
+  font-size: 28px;
+  margin-top: 30px;
+}
+
+.slider-showcase {
+  width: 100%;
+  background-color: var(--lightGray);
+}

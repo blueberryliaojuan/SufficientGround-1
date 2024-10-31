@@ -1,0 +1,128 @@
+.page {
+  height: 100vh;
+}
+
+.main-content {
+  height: calc(100% - var(--headerHeight));
+  padding-top: var(--headerHeight);
+  width: 100%;
+  display: flex;
+}
+
+#main {
+  position: relative;
+}
+
+.business-card {
+  width: 60%;
+  background-image: url(../img/exterior-sign.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.contact-form-container {
+  height: 100%;
+  max-width: 700px;
+  padding: 35px;
+  margin: 0 auto;
+  color: #fff;
+}
+.contact-form {
+  height: 100%;
+  overflow: auto;
+}
+
+.contact-form h1 {
+  margin-bottom: 20px;
+  font-size: 32px;
+  color: var(--misto);
+  text-align: center;
+}
+.form-intro {
+  font-size: 16px;
+}
+.basic-info {
+  display: grid;
+  grid-template-columns: 1fr 0.1fr 1fr;
+  margin-top: 20px;
+}
+.contact-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 16px;
+  color: var(--misto);
+  font-weight: 400;
+  margin-top: 20px;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid var(--londofog);
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.contact-form button {
+  width: 100%;
+  padding: 10px;
+  background-color: var(--londofog);
+  color: var(--misto);
+  border: none;
+  border-radius: 4px;
+  font-size: 22px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: var(--crema);
+}
+
+button[type="submit"] {
+  margin-top: 30px;
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 1000;
+}
+
+.popup-content {
+  width: 300px;
+  height: 200px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: var(--misto);
+  padding: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  color: var(--londofog);
+  border-radius: 4px;
+}
+.popup-content div {
+  margin-bottom: 10px;
+}
+#close-popup {
+  margin-top: 20px;
+  width: 100px;
+  padding: 10px;
+  background-color: var(--londofog);
+  color: var(--misto);
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}

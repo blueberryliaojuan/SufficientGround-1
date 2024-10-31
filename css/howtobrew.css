@@ -1,0 +1,42 @@
+article {
+  width: 1200px;
+  margin: 0 auto;
+  padding-top: var(--headerHeight);
+}
+.arrow {
+  height: 80px;
+  display: flex;
+  color: var(--misto);
+  font-weight: 900;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  margin: 80px auto 0;
+  /* background-color: var(--brevo); */
+  /* border-radius: 40px; */
+}
+.pre,
+.next {
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  border-radius: 50%;
+  text-align: center;
+  color: var(--misto);
+  background-color: var(--londofog);
+  font-size: 18px;
+  cursor: pointer;
+}
+.pre {
+  margin-right: 20px;
+}
+.next {
+  margin-left: 20px;
+}
+article img {
+  width: 1200px;
+}
+
+.page-num {
+  font-size: 20px;
+}
