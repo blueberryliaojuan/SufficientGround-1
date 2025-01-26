@@ -83,7 +83,7 @@ article,
     margin-top: 3rem;
   }
   .member {
-    width: 60%;
+    width: 70%;
     margin: 0 auto;
     display: flex;
     flex-direction: row;
@@ -109,7 +109,7 @@ article,
 }
 @media screen and (max-width: 580px) {
   .member {
-    width: 80%;
+    width: 95%;
     margin: 0 auto;
   }
   .hero {

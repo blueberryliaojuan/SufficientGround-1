@@ -11,6 +11,17 @@ article {
 article img {
   width: 100%;
 }
+
+@media screen and (max-width: 1920px) {
+  article {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 1440px) {
+  article {
+    width: 70%;
+  }
+}
 @media screen and (max-width: 1024px) {
   article {
     width: 100%;

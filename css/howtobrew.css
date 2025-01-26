@@ -39,8 +39,14 @@ article img {
   font-size: 20px;
 }
 @media screen and (max-width: 1920px) {
+  article {
+    width: 50%;
+  }
 }
 @media screen and (max-width: 1440px) {
+  article {
+    width: 70%;
+  }
 }
 @media screen and (max-width: 1024px) {
 }
@@ -51,4 +57,14 @@ article img {
 }
 
 @media screen and (max-width: 580px) {
+  .pre,
+  .next {
+    width: 2rem;
+    height: 2rem;
+    line-height: 2rem;
+    font-size: 1rem;
+  }
+  .page-num {
+    font-size: 1rem;
+  }
 }
