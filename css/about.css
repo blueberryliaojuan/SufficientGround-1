@@ -71,11 +71,16 @@ article,
     padding-top: var(--headerHeight);
     height: 40rem;
   }
+  .team {
+    width: 90%;
+    margin: 0 auto;
+  }
 }
 @media screen and (max-width: 880px) {
   .team {
     display: flex;
     flex-direction: column;
+    margin-top: 3rem;
   }
   .member {
     width: 60%;
@@ -104,7 +109,8 @@ article,
 }
 @media screen and (max-width: 580px) {
   .member {
-    width: 100%;
+    width: 80%;
+    margin: 0 auto;
   }
   .hero {
     padding-top: var(--headerHeight);

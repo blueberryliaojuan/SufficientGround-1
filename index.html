@@ -170,7 +170,7 @@
           <h2 class="oswald-bold">Our Products</h2>
         </section>
         <section class="slider-showcase">
-          <div class="slider">
+          <div class="slider" id="slider">
             <div class="slides">
               <input type="radio" name="r" id="r1" checked />
               <input type="radio" name="r" id="r2" />
@@ -228,20 +228,23 @@
       </footer>
     </div>
     <script>
-      const obj = {
-        name: "sss",
-        do: function () {
-          console.log(this); //obj
-        },
+      window.onload = function () {
+        //default slider is the first one
+        let firstRod = document.querySelector(".bar");
+        firstRod.style.backgroundColor = "#c4d3d9";
+        let rods = document.querySelectorAll(".bar");
+        let slider = document.getElementById("slider");
+        slider.addEventListener("click", function (e) {
+          if (e.target.id) {
+            // console.log(e.target.id);
+            let clikedId = e.target.id.slice(1);
+            rods.forEach(function (rod) {
+              rod.style.backgroundColor = "transparent";
+            });
+            rods[clikedId - 1].style.backgroundColor = "#c4d3d9";
+          }
+        });
       };
-      obj.do();
-      const obj1 = {
-        name: "sss",
-        do: () => {
-          console.log(this); //window
-        },
-      };
-      obj1.do();
     </script>
   </body>
 </html>
