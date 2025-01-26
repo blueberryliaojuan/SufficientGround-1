@@ -1,5 +1,5 @@
 article {
-  width: 1200px;
+  width: 80%;
   margin: 0 auto;
   padding-top: var(--headerHeight);
 }
@@ -13,11 +13,6 @@ video {
   width: 100%;
 }
 
-.hero .hero-content {
-  width: 500px;
-  height: 500px;
-  background-color: rgba(218, 218, 218, 0.7);
-}
 .welcome {
   color: var(--ivory);
   font-size: 28px;
@@ -27,4 +22,19 @@ video {
 .slider-showcase {
   width: 100%;
   background-color: var(--lightGray);
+}
+
+@media screen and (max-width: 1024px) {
+  article,
+  .core-content {
+    width: 80%;
+    margin: 0 auto 0;
+  }
+}
+@media screen and (max-width: 580px) {
+  article,
+  .core-content {
+    width: 100%;
+    margin: 0 auto 0;
+  }
 }

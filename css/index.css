@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Arimo", helvertica;
   --misto: #c4d3d9;
   --londofog: #c4d3d9;
   --brevo: #dbc0a0;
@@ -10,8 +9,8 @@
   --londofog: #3e5459;
   --robusta: #403223;
   --dark: #212121;
-  --headerHeight: 140px;
-  --logoHeight: 100px;
+  --headerHeight: 9rem;
+  --logoHeight: 5.5rem;
 }
 a {
   text-decoration: none;
@@ -26,29 +25,10 @@ ul {
   list-style: none;
 }
 
-/* body {
-  cursor: url("../img/12429aed7e93a12d0a6faa8511595306.png"), auto !important;
-} */
-.f12 {
-  font-size: 12px;
-}
-.f14 {
+body {
+  min-width: 320px;
+  background-color: var(--dark);
   font-size: 14px;
-}
-.f16 {
-  font-size: 16px;
-}
-.f18 {
-  font-size: 18px;
-}
-.f20 {
-  font-size: 20px;
-}
-.f22 {
-  font-size: 22px;
-}
-.f24 {
-  font-size: 24px;
 }
 
 .pirata-one-regular {
@@ -166,13 +146,11 @@ ul {
 
 .josefin-sans-regular {
   font-family: "Josefin Sans", sans-serif;
-  font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
 }
 .josefin-sans-bold {
   font-family: "Josefin Sans", sans-serif;
-  font-optical-sizing: auto;
   font-weight: 900;
   font-style: normal;
 }
@@ -188,13 +166,11 @@ ul {
 }
 .oswald-regular {
   font-family: "Oswald", sans-serif;
-  font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
 }
 .oswald-bold {
   font-family: "Oswald", sans-serif;
-  font-optical-sizing: auto;
   font-weight: 900;
   font-style: normal;
 }
@@ -207,22 +183,15 @@ ul {
 }
 
 .sub-title h2 {
-  height: 100px;
-  line-height: 100px;
+  height: 5rem;
+  line-height: 5rem;
   background-color: var(--misto);
   color: var(--dark);
-  font-size: 32px;
+  font-size: 2rem;
   text-align: center;
   text-transform: uppercase;
 }
 
-body {
-  background-color: var(--dark);
-  font-size: 14px;
-}
-.page {
-  width: 100vw;
-}
 header {
   width: 100%;
   height: var(--headerHeight);
@@ -235,29 +204,33 @@ header {
   z-index: 99;
 }
 header .logo {
-  padding-left: 40px;
+  padding-left: 2rem;
+  width: 30%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 header .logo img {
   height: var(--logoHeight);
-  vertical-align: center;
 }
 
 nav {
+  width: 55%;
   display: flex;
   justify-content: flex-end;
   align-self: center;
-  padding-right: 20px;
 }
+
 nav .nav-item {
-  padding: 10px;
+  flex: 1;
 }
+
 nav .nav-item .nav-btn {
-  width: 140px;
-  height: 50px;
-  line-height: 50px;
+  height: 2.8rem;
+  line-height: 2.8rem;
   text-align: center;
   text-transform: uppercase;
-  font-size: 21px;
+  font-size: 1.2rem;
 }
 nav .nav-item .nav-btn:hover {
   background-color: var(--robusta);
@@ -272,33 +245,12 @@ nav .nav-item .nav-active:hover {
 }
 section p {
   color: var(--misto);
-  font-size: 26px;
-  padding: 40px 20px;
-}
-.sign-up {
-  height: 210px;
-  padding: 40px 140px;
-  font-size: 18px;
-  line-height: 24px;
-  background-color: var(--brevo);
-  position: relative;
-}
-
-.register {
-  width: 240px;
-  height: 40px;
-  background-color: var(--crema);
-  color: #fff;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  bottom: 40px;
-  text-align: center;
-  line-height: 40px;
+  font-size: 1.2rem;
+  padding: 2rem 1rem;
 }
 
 footer {
-  height: 150px;
+  height: 12rem;
   background-color: var(--crema);
   color: var(--misto);
   text-transform: uppercase;
@@ -308,28 +260,28 @@ footer {
 footer .logo {
   height: 100%;
   overflow: hidden;
-  padding: 10px 40px;
+  padding: 0.8rem 2rem;
 }
 footer .logo img {
   height: 100%;
-  border-radius: 20px;
+  border-radius: 1rem;
 }
 footer .logo:hover {
   cursor: pointer;
 }
 
 footer .contact {
-  line-height: 25px;
-  padding-top: 20px;
+  line-height: 2rem;
+  padding-top: 1rem;
 }
 footer .contact .fa-solid {
-  font-size: 24px;
+  font-size: 2rem;
   color: var(--brevo);
 }
 
 footer .footer-links {
-  line-height: 25px;
-  padding-top: 20px;
+  line-height: 2rem;
+  padding-top: 1rem;
 }
 
 .social-btns .btn,
@@ -346,24 +298,13 @@ footer .footer-links {
   -webkit-transform: scale(0.8);
   transform: scale(0.8);
 }
-/* .social-btns .btn.facebook:before {
-  background-color: #ff9f1c;
-}
-.social-btns .btn.facebook .fa {
-  color: #ff9f1c;
-} */
 .social-btns .btn.twitter:before {
   background-color: var(--crema);
 }
 .social-btns .btn.twitter .fa {
   color: var(--crema);
 }
-/* .social-btns .btn.google:before {
-  background-color: #0077b6;
-}
-.social-btns .btn.google .fa {
-  color: #0077b6;
-} */
+
 .social-btns .btn.instagram:before {
   background-color: var(--londofog);
 }
@@ -388,19 +329,19 @@ footer .footer-links {
   transform: scale(1);
 }
 .social-btns {
-  height: 40px;
+  height: 3rem;
   font-size: 0;
-  padding-top: 20px;
-  padding-right: 20px;
+  padding-top: 1rem;
+  padding-right: 1rem;
 }
 
 .social-btns .btn {
   display: inline-block;
   background-color: #fff;
-  width: 40px;
-  height: 40px;
-  line-height: 40px;
-  margin: 0 10px;
+  width: 3rem;
+  height: 3rem;
+  line-height: 3rem;
+  margin: 0 1rem;
   text-align: center;
   position: relative;
   overflow: hidden;
@@ -417,6 +358,122 @@ footer .footer-links {
   transform: rotate(45deg);
 }
 .social-btns .btn .fa {
-  font-size: 30px;
+  font-size: 2rem;
   vertical-align: middle;
+}
+@media screen and (max-width: 1440px) {
+  * {
+    --headerHeight: 8.5rem;
+    --logoHeight: 5rem;
+  }
+  nav .nav-item .nav-btn {
+    height: 2.8rem;
+    line-height: 2.8rem;
+    font-size: 1rem;
+  }
+  nav {
+    width: 70%;
+  }
+  footer .logo {
+    height: 90%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  html {
+    font-size: 12px;
+  }
+  * {
+    --headerHeight: 10rem;
+    --logoHeight: 5.5rem;
+  }
+  header .logo {
+    padding-left: 2rem;
+  }
+  nav .nav-item .nav-btn {
+    height: 3rem;
+    line-height: 3rem;
+    font-size: 1.8rem;
+  }
+  nav {
+    width: 60%;
+    flex-wrap: wrap;
+  }
+  nav .nav-item {
+    flex: 25.5%;
+  }
+  .sub-title h2 {
+    height: 5rem;
+    line-height: 5rem;
+    font-size: 1.8rem;
+  }
+  section p {
+    font-size: 1rem;
+    padding: 2rem 1rem;
+  }
+  footer .contact,
+  footer .footer-links {
+    font-size: 1rem;
+    line-height: 1.8rem;
+  }
+  footer .logo {
+    height: 80%;
+  }
+}
+@media screen and (max-width: 880px) {
+  nav .nav-item .nav-btn {
+    height: 3rem;
+    line-height: 3rem;
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  * {
+    --headerHeight: 5rem;
+    --logoHeight: 3rem;
+  }
+  header .logo {
+    padding-left: 1rem;
+  }
+  nav .nav-item .nav-btn {
+    height: 1.8rem;
+    line-height: 1.8rem;
+    font-size: 0.9rem;
+  }
+
+  .sub-title h2 {
+    height: 5rem;
+    line-height: 5rem;
+    font-size: 1.6rem;
+  }
+  section p {
+    font-size: 0.8rem;
+    padding: 2rem 1rem;
+  }
+  footer {
+    height: 6rem;
+  }
+  footer .contact .fa-solid {
+    font-size: 1rem;
+  }
+  .social-btns {
+    height: 1.5rem;
+    padding-top: 1rem;
+    padding-right: 0.5rem;
+  }
+  .social-btns .btn {
+    width: 1.5rem;
+    height: 1.5rem;
+    line-height: 1.5rem;
+    margin: 0 0.5rem;
+  }
+  .social-btns .btn .fa {
+    font-size: 1rem;
+  }
+  footer .contact,
+  footer .footer-links {
+    font-size: 0.6rem;
+    line-height: 1rem;
+  }
 }

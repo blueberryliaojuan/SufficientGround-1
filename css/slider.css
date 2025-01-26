@@ -14,8 +14,8 @@
 }
 
 .bar {
-  width: 50px;
-  height: 10px;
+  width: 4rem;
+  height: 1rem;
   border: 2px solid var(--misto);
   margin: 6px;
   cursor: pointer;
@@ -63,4 +63,15 @@ input[name="r"] {
 }
 #r5:checked ~ .s1 {
   margin-left: -80%;
+}
+
+@media screen and (max-width: 580px) {
+  .bar {
+    width: 3rem;
+    height: 0.7rem;
+    border: 2px solid var(--misto);
+    margin: 3px;
+    cursor: pointer;
+    transition: 0.4s;
+  }
 }

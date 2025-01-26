@@ -1,19 +1,17 @@
 article {
-  width: 1200px;
-  margin: 0 auto;
+  /* width: 80%; */
+  margin: 0 auto 2rem;
   padding-top: var(--headerHeight);
 }
 .arrow {
-  height: 80px;
+  /* height: 80px; */
   display: flex;
   color: var(--misto);
   font-weight: 900;
   justify-content: center;
   align-items: center;
   width: 200px;
-  margin: 80px auto 0;
-  /* background-color: var(--brevo); */
-  /* border-radius: 40px; */
+  margin: 0 auto 20px;
 }
 .pre,
 .next {
@@ -34,9 +32,23 @@ article {
   margin-left: 20px;
 }
 article img {
-  width: 1200px;
+  width: 100%;
 }
 
 .page-num {
   font-size: 20px;
+}
+@media screen and (max-width: 1920px) {
+}
+@media screen and (max-width: 1440px) {
+}
+@media screen and (max-width: 1024px) {
+}
+@media screen and (max-width: 880px) {
+  article {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 580px) {
 }
