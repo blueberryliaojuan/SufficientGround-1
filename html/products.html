@@ -228,7 +228,7 @@
         },
       ];
       const coffeeShowcase = document.querySelector("#coffeeShowcase");
-      let renferCoffee = (coffeeBeans) => {
+      let renderCoffee = (coffeeBeans) => {
         let coffeeItems = "";
         coffeeBeans.forEach((bean) => {
           coffeeItems += `
@@ -252,7 +252,7 @@
         });
         coffeeShowcase.innerHTML = coffeeItems;
       };
-      renferCoffee(coffeeBeans);
+      renderCoffee(coffeeBeans);
       const coffeeOption = document.querySelector("#coffeeOption");
       coffeeOption.addEventListener("change", (e) => {
         let newArr = coffeeBeans.filter((item, idex) => {
@@ -260,7 +260,7 @@
           else return item;
         });
         console.log(newArr);
-        renferCoffee(newArr);
+        renderCoffee(newArr);
       });
 
       let others = [
