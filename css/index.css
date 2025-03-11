@@ -182,6 +182,10 @@ body {
   text-transform: uppercase;
 }
 
+.transparent {
+  color: transparent;
+}
+
 .sub-title h2 {
   height: 5rem;
   line-height: 5rem;
